@@ -1,65 +1,72 @@
 import React from 'react'
 import html from "../../public/html.png"
 import css from "../../public/css.jpg"
-import javascript from "../../public/javascript.jpg"
-import express from "../../public/express.png"
-import reactjs from "../../public/reactjs.png"
-import nodejs from "../../public/node.png"
+import javascript from "../../public/javascript.png"
+import oracle from "../../public/oracle.png"
+import java from "../../public/java.png"
+import spring from "../../public/spring.png"
+import springBoot from "../../public/springBoot.jpg"
 
 const cardItem = [ 
     { 
         id:1,
-        logo:mongodb,
-        name: "MongoDb",
+        logo:html,
+        name: "Html",
     },
     { 
         id:2,
-        logo: express,
-        name: "Express",
+        logo: css,
+        name: "Css",
     },
     { 
         id:3,
-        logo:reactjs,
-        name: "Reactjs",
+        logo: javascript,
+        name: "Javascript",
     },
     { 
         id:4,
-        logo:nodejs,
-        name: "Nodejs",
+        logo:java,
+        name: "Java",
     },
     { 
         id:5,
-        logo:python,
-        name: "Python",
+        logo: oracle,
+        name: "Oracle",
     },
     { 
         id:6,
-        logo:java,
-        name: "Java",
+        logo: spring,
+        name: "Spring",
+    },
+    { 
+        id:7,
+        logo: springBoot,
+        name: "SpringBoot",
     },
 ]
 
 const Experience = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10">
+    <div
+    name="Eperience"
+    className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
       <div>
         <h1 className="text-3xl mb-5 font-bold">Experience</h1>
-        <span className='underline font-semibold'> Featured Projects</span>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-3 my-5'>
+        <p className='underline'>
+             I've more than 1  years of Experience in below technologies
+             </p>
+        <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3'>
+
             {cardItem?.map(({id, logo, name})=> ( 
-                <div className='md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 curser-pointer hover:scale-110' key={id}>
-                    <img src={logo} className='w-[120px] h-[120px] p-1 rounded-full border-[2px]' alt="imgs" />
+
+                <div className='flex flex-col items-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 curser-pointer hover:scale-110' key={id}>
+                    <img src={logo} className='w-[150px] h-[120px] rounded-full' alt="imgs" />
+
                     <div>
-                        <div className='px-2 font-bold text-lg'>{name}</div>
-                        <p className='px-2 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, molestiae.</p>
-                    </div>
-                    <div className='justify-around px-6 py-4 space-x-4'>
-                         <button className='bg-blue-500 hove:bg-blue-700 text-white font-bold px-4 py-2 rounded'> Video</button>
-                         <button className='bg-green-500 hove:bg-blue-700 text-white font-bold px-4 py-2 rounded'>Source code</button>
+                        <div className=''>{name}</div>
                     </div>
                      </div> 
             ))}
-
         </div>
       </div>
     </div>
