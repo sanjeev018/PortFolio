@@ -2,10 +2,10 @@ import React from 'react'
 import html from "../../public/html.png"
 import css from "../../public/css.jpg"
 import javascript from "../../public/javascript.png"
-import oracle from "../../public/oracle.png"
-import java from "../../public/java.png"
-import spring from "../../public/spring.png"
-import springBoot from "../../public/springBoot.jpg"
+import reactjs from "../../public/reactjs.png"
+import tailwind from "../../public/tailwindcss.png"
+import redux from "../../public/redux.png"
+import typescript from "../../public/typescript.png"
 
 const cardItem = [ 
     { 
@@ -25,23 +25,23 @@ const cardItem = [
     },
     { 
         id:4,
-        logo:java,
-        name: "Java",
+        logo:tailwind,
+        name: "TailwindCss",
     },
     { 
         id:5,
-        logo: oracle,
-        name: "Oracle",
+        logo: reactjs,
+        name: "ReactJS",
     },
     { 
         id:6,
-        logo: spring,
-        name: "Spring",
+        logo: redux,
+        name: "React-redux",
     },
     { 
         id:7,
-        logo: springBoot,
-        name: "SpringBoot",
+        logo: typescript,
+        name: "TypeScript",
     },
 ]
 
@@ -53,19 +53,21 @@ const Experience = () => {
       <div>
         <h1 className="text-3xl mb-5 font-bold">Experience</h1>
         <p className='underline'>
-             I've more than 1  years of Experience in below technologies
+        I've no experience yet but I made some projects with amazing technologies
              </p>
         <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3'>
 
             {cardItem?.map(({id, logo, name})=> ( 
 
-                <div className='flex flex-col items-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 curser-pointer hover:scale-110' key={id}>
+                <div
+                className='flex flex-col items-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 curser-pointer hover:scale-110 duration-300'
+                 key={id}>
                     <img src={logo} className='w-[150px] h-[120px] rounded-full' alt="imgs" />
 
                     <div>
                         <div className=''>{name}</div>
                     </div>
-                     </div> 
+                     </div>     
             ))}
         </div>
       </div>

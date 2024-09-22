@@ -32,10 +32,10 @@ const Home = () => {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              repellendus, culpa placeat deleniti illo sequi officia inventore
-              quaerat accusantium nobis. Est molestias harum adipisci ullam modi
-              ipsa porro a at ad asperiores,
+            👋 Welcome to My Frontend Playground!
+
+Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms ideas into engaging, interactive user experiences.
+ Here, you'll find a showcase of my favorite projects, combining clean, modern design with responsive, lightning-fast performance.
             </p>
             <br />
             {/* {social media icons} */}

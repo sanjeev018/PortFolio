@@ -31,13 +31,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16 fixed top-0 left-0 right-0 bg-white">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16 fixed top-0 left-0 right-0 bg-white z-50">
         <div className="flex justify-between h-16 items-center">
           <div className="flex space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="" />
             <h1 className="font-semibold text-xl cursor-pointer">
               Sanjee<span className="text-green-500 text-2xl">v</span>
-              <p className="text-sm">Web Developer</p>
+              <p className="text-sm">Frontend React Developer</p>
             </h1>
           </div>
           {/* {desktop navbar} */}
