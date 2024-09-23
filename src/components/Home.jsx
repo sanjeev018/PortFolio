@@ -48,13 +48,13 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
                     target="_blank"
                   >
                     <li>
-                      <FaLinkedin className="text-2xl cursor-pointer" />
+                      <FaLinkedin className="text-2xl cursor-pointer hover:text-red-700 duration-500" />
                     </li>
                   </a>
 
                   <a href="https://github.com/sanjeev018" target="_blank">
                     <li>
-                      <FaGithub className="text-2xl cursor-pointer" />
+                      <FaGithub className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
                     </li>
                   </a>
 
@@ -63,7 +63,7 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
                     target="_blank"
                   >
                     <li>
-                      <FaSquareFacebook className="text-2xl cursor-pointer" />
+                      <FaSquareFacebook className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
                     </li>
                   </a>
 
@@ -72,7 +72,7 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
                     target="_blank"
                   >
                     <li>
-                      <FaInstagram className="text-2xl cursor-pointer hover:text-red-500" />
+                      <FaInstagram className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
                     </li>
                   </a>
                 </ul>

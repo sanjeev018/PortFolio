@@ -55,17 +55,17 @@ const Experience = () => {
         <p className='underline'>
         I've no experience yet but I made some projects with amazing technologies
              </p>
-        <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3'>
+        <div className='grid grid-cols-3 md:grid-cols-6 gap-5 my-3'>
 
-            {cardItem?.map(({id, logo, name})=> ( 
+            {cardItem?.map(({id, logo})=> ( 
 
                 <div
-                className='flex flex-col items-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 curser-pointer hover:scale-110 duration-300'
+                className='flex flex-col items-center border-[2px] rounded-full  md:w-[100px] md:h-[100px] shadow-md p-1 curser-pointer hover:scale-110 duration-300'
                  key={id}>
                     <img src={logo} className='w-[150px] h-[120px] rounded-full' alt="imgs" />
 
                     <div>
-                        <div className=''>{name}</div>
+                        {/* <div className=''>{name}</div> */}
                     </div>
                      </div>     
             ))}

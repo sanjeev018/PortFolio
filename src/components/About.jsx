@@ -18,9 +18,9 @@ const About = () => {
       </h1>
       <span>
         {" "}
-        [degree & certification] , [institution],[Year] [Degree/certification],
-        [institution], [Year], [Relevent Course] , [Platform/Instituation],
-        [Year]
+        MERN (MongoDB , ExpressJS, ReactJS , NodeJS) Stack , Geeksdoor ,  2024  || B.com (Computer),
+        Barkatullah Univercity , Bhopal , 2024, || PGDCA , Adarsh College , Harda (M.P.),
+        Running
       </span>
 
       <br />
@@ -30,12 +30,12 @@ const About = () => {
         Skills & Expertise
       </h1>
       <span>
-        Proficient in [Programming Language] Experienced with
-        [software/Tools/Technologies] strong grasp of [Design
-        Principles/concept] Excellent Problem-solving skills Effective
-        Communication and collaborator{" "}
+        Proficient in Javascript Project made with
+        React.js , React ReduxJS , Redux Toolkit , HTML , CSS using Typescript strong grasp of TailwindCSS and ReactBootstrap
+         Excellent Problem-solving skills Effective
+        Communication and collaborator
       </span>
-      <br />
+      {/* <br />
       <br />
       <h1 className="text-green-600 font-semibold text-xl">
         Professional Experience
@@ -44,7 +44,7 @@ const About = () => {
          [Job title] 
         [Company, Organization],[Dates], [Breif description of Responsibilities and Achievements] [Job title], [Company, Organization]
         ,[Dates]
-      </span>
+      </span> */}
 
       <br />
       <br />
@@ -52,9 +52,9 @@ const About = () => {
         Achievements & Awards
       </h1>
       <span>
-         [Job title] 
-        [Company, Organization],[Dates], [Breif description of Responsibilities and Achievements] [Job title], [Company, Organization]
-        ,[Dates]
+         JavaScript Specialist Certification from 
+        Infosys Springboard , Aug 2024 | Responsive Web Design from free Code Camp , Aug 2024
+        
       </span>
 
       <br />
@@ -64,7 +64,7 @@ const About = () => {
       </h1>
       <span>
         <p>
-        My mission is to leverage my skills and creativity to deliver innovative [Your field] solutions that exceed client
+        My mission is to leverage my skills and creativity to deliver innovative Frontend Development solutions that exceed client
         expectations and contribute positively to the digital landscape. I am commited to Continuous learning and growth , always seeking
         new challenges to continuous learning and growth , always seeking new challenges and opportunities to expand my horizons.  
         </p>
