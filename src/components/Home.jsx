@@ -25,8 +25,8 @@ const Home = () => {
               <ReactTyped
                 className="text-red-700 font-bold"
                 strings={["Developer", "Programmer", "Coder"]}
-                typeSpeed={40}
-                backSpeed={50}
+                typeSpeed={70}
+                backSpeed={60}
                 loop={true}
               />
             </div>
@@ -41,53 +41,20 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
             {/* {social media icons} */}
             <div className="flex flex-col justify-between md:flex-row space-y-6 md:space-y-0 items-center">
               <div className="space-y-2">
-                <h1 className="font-bold">Available on</h1>
-                <ul className="flex space-x-5">
-                  <a
-                    href="https://www.linkedin.com/in/sanjeev-gour-5a80502b3/"
-                    target="_blank"
-                  >
-                    <li>
-                      <FaLinkedin className="text-2xl cursor-pointer hover:text-red-700 duration-500" />
-                    </li>
-                  </a>
-
-                  <a href="https://github.com/sanjeev018" target="_blank">
-                    <li>
-                      <FaGithub className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
-                    </li>
-                  </a>
-
-                  <a
-                    href="https://www.facebook.com/sanjeev.gour.3386"
-                    target="_blank"
-                  >
-                    <li>
-                      <FaSquareFacebook className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
-                    </li>
-                  </a>
-
-                  <a
-                    href="https://www.instagram.com/sanjeev.gour_23/"
-                    target="_blank"
-                  >
-                    <li>
-                      <FaInstagram className="text-2xl cursor-pointer hover:text-red-700 duration-500"/>
-                    </li>
-                  </a>
-                </ul>
-              </div>
-
-              <div className="space-y-2">
                 <h1 className="font-bold">Currently working on</h1>
-                <div className="flex space-x-5">
-                  <SiMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+                <div className="flex space-x-5 text-center ml-3 md:ml-0">
+                  <SiMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] text-green-500 bg-black"/>
                   <SiExpress className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
-                  <FaReact className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
-                  <FaNodeJs className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+                  <FaReact className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] bg-black text-sky-400" />
+                  <FaNodeJs className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] text-green-800" />
                 </div>
               </div>
+            {/* <div className="space-y-2">
+            Full-Stack Web Developer & Passionate Coder
+
+            </div> */}
             </div>
+
           </div>
 
           {/* {right container} */}
@@ -95,7 +62,7 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
             <img
               src={avif}
               className="rounded-full md:w-[450px] md:h-[450px]"
-              alt=""
+              alt="this is img"
             />
           </div>
         </div>

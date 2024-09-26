@@ -5,9 +5,9 @@ const About = () => {
     <div
     name="About"
     className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
-        <div>
+        <div className="font-sans">
       <h1 className="text-3xl mb-5 font-bold">About</h1>
-      <p>
+      <p >
         Hello, I'm Sanjeev, passionate Web developer with a keen eye for FrontEnd React.
         Developer . With a background in IT , I strive to create imactful and
         visually stunnig software solutions that leaves a lasting impression.
@@ -16,49 +16,53 @@ const About = () => {
       <h1 className="text-green-600 font-semibold text-xl">
         Education & Training
       </h1>
-      <span>
         {" "}
-        MERN (MongoDB , ExpressJS, ReactJS , NodeJS) Stack , Geeksdoor ,  2024  || B.com (Computer),
-        Barkatullah Univercity , Bhopal , 2024, || PGDCA , Adarsh College , Harda (M.P.),
-        Running
-      </span>
+        <ul className="list-disc ml-6">
+          <li><span className="font-semibold">MERN Stack (MongoDB , ExpressJS, ReactJS , NodeJS) -</span>
+          <span className="italic"> Geeksdoor, 2024</span>
+          </li>
 
+          <li><span className="font-semibold">B.Com (Computer) – </span>
+          <span className="italic">  Barkatullah University, Bhopal, 2024</span>
+          </li>
+
+          <li><span className="font-semibold">PGDCA –  </span>
+          <span className="italic">  Adarsh College, Harda (M.P.) – Ongoing</span>
+          </li>
+        </ul>
+  
       <br />
       <br />
 
       <h1 className="text-green-600 font-semibold text-xl">
         Skills & Expertise
       </h1>
-      <span>
-        Proficient in Javascript Project made with
-        React.js , React ReduxJS , Redux Toolkit , HTML , CSS using Typescript strong grasp of TailwindCSS and ReactBootstrap
-         Excellent Problem-solving skills Effective
-        Communication and collaborator
-      </span>
-      {/* <br />
-      <br />
-      <h1 className="text-green-600 font-semibold text-xl">
-        Professional Experience
-      </h1>
-      <span>
-         [Job title] 
-        [Company, Organization],[Dates], [Breif description of Responsibilities and Achievements] [Job title], [Company, Organization]
-        ,[Dates]
-      </span> */}
+      <ul className="list-disc ml-6">
+        <li className="">Proficient in JavaScript and building projects using React.js, React Redux, and Redux Toolkit</li>
+        <li>Strong knowledge of HTML, CSS, and TypeScript </li>
+        <li>Experienced in TailwindCSS and React Bootstrap </li>
+        <li> Excellent problem-solving skills </li>
+        <li> Effective communicator and team collaborator </li>
+      </ul>
 
       <br />
       <br />
       <h1 className="text-green-600 font-semibold text-xl">
         Achievements & Awards
       </h1>
-      <span>
-         JavaScript Specialist Certification from 
-        Infosys Springboard , Aug 2024 | Responsive Web Design from free Code Camp , Aug 2024
-        
-      </span>
+      <ul className="list-disc ml-6">
+          <li><span className="font-semibold">JavaScript Specialist Certification – </span>
+          <span className="italic">Infosys Springboard, August 2024</span>
+          </li>
 
+          <li><span className="font-semibold">Responsive Web Design – </span>
+          <span className="italic"> freeCodeCamp, August 2024</span>
+          </li>
+        </ul>
+      
       <br />
       <br />
+
       <h1 className="text-green-600 font-semibold text-xl">
        Mission Statement
       </h1>

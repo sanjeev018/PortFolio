@@ -6,6 +6,7 @@ import reactjs from "../../public/reactjs.png"
 import tailwind from "../../public/tailwindcss.png"
 import redux from "../../public/redux.png"
 import typescript from "../../public/typescript.png"
+import github from "../../public/github.png"
 
 const cardItem = [ 
     { 
@@ -43,19 +44,24 @@ const cardItem = [
         logo: typescript,
         name: "TypeScript",
     },
+    { 
+        id:8,
+        logo: github,
+        name: "GitHub",
+    },
 ]
 
-const Experience = () => {
+const Tools = () => {
   return (
     <div
-    name="Eperience"
+    name="Tools"
     className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
       <div>
-        <h1 className="text-3xl mb-5 font-bold">Experience</h1>
+        <h1 className="text-3xl mb-5 font-bold">Tools</h1>
         <p className='underline'>
-        I've no experience yet but I made some projects with amazing technologies
+        I've no Tools yet but I made some projects with amazing technologies
              </p>
-        <div className='grid grid-cols-3 md:grid-cols-6 gap-5 my-3'>
+        <div className='grid grid-cols-3 md:grid-cols-7 gap-5 my-3'>
 
             {cardItem?.map(({id, logo})=> ( 
 
@@ -75,4 +81,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Tools

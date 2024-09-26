@@ -17,11 +17,11 @@ const Navbar = () => {
     }, 
     {
       id:3, 
-      text: "PortFolio"
+      text: "Projects"
     }, 
     {
       id:4, 
-      text: "Eperience"
+      text: "Tools"
     }, 
     {
       id:5, 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16 fixed top-0 left-0 right-0 bg-white z-50">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 fixed top-0 left-0 right-0 z-50 bg-white">
         <div className="flex justify-between h-16 items-center">
           <div className="flex space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="" />
@@ -45,7 +45,7 @@ const Navbar = () => {
             <ul className="hidden md:flex space-x-8">
               { 
                 navItems?.map(({id, text})=> ( 
-                  <li className="hover:scale-105 duration-200 cursor-pointer" key={id}> 
+                  <li className="hover:scale-105 hover:text-green-500 duration-200 cursor-pointer" key={id}> 
                   <Link 
                   to={text}
                   smooth={true}

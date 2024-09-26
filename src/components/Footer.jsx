@@ -18,28 +18,28 @@ const Footer = () => {
                href="https://www.facebook.com/sanjeev.gour.3386"
                target="_blank"
                 >  
-              <FaFacebook size={24}/> 
+              <FaFacebook className="bg-white rounded-full text-blue-700 hover:scale-105 duration-300" size={24}/> 
               </a>
 
               <a
               href="https://github.com/sanjeev018"
               target="_blank"
               >
-              <FaGithub size={24} />
+              <FaGithub className="hover:scale-105 duration-300" size={24} />
               </a>
 
               <a
               href="https://www.instagram.com/sanjeev.gour_23/"
               target="_blank"
               >
-              <FaInstagram size={24} />
+              <FaInstagram className="bg-rose-600 text-white rounded-md hover:scale-105 duration-300" size={23} />
               </a>
               
               <a
               href="https://www.linkedin.com/in/sanjeev-gour-5a80502b3/"
               target="_blank"
               >
-              <FaLinkedinIn size={24} />
+              <FaLinkedinIn className="bg-blue-700 rounded-sm text-white hover:scale-105 duration-300" size={22} />
               </a>
 
             </div>
