@@ -32,14 +32,14 @@ const Footer = () => {
               href="https://www.instagram.com/sanjeev.gour_23/"
               target="_blank"
               >
-              <FaInstagram className="bg-rose-600 text-white rounded-md hover:scale-105 duration-300" size={23} />
+              <FaInstagram className="bg-rose-600 text-white rounded-md hover:scale-105 duration-300 mt-[1px]" size={23} />
               </a>
               
               <a
               href="https://www.linkedin.com/in/sanjeev-gour-5a80502b3/"
               target="_blank"
               >
-              <FaLinkedinIn className="bg-blue-700 rounded-sm text-white hover:scale-105 duration-300" size={22} />
+              <FaLinkedinIn className="bg-blue-700 rounded-sm text-white hover:scale-105 duration-300 mt-[3px]" size={20} />
               </a>
 
             </div>
