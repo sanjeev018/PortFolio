@@ -1,13 +1,11 @@
 import React from "react";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
-import { FaReact, FaInstagram } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { ReactTyped } from "react-typed";
-import avif from "../../public/photo.avif";
-import { FaGithub } from "react-icons/fa";
+import giphy from "../../public/giphy.webp";
+
 
 const Home = () => {
   return (
@@ -60,7 +58,7 @@ Hi there! I'm Sanjeev Gour, a passionate React Frontend Developer who transforms
           {/* {right container} */}
           <div className="md:w-1/2 md:ml-[48px] md:mt-[20px] order-1">
             <img
-              src={avif}
+              src={giphy}
               className="rounded-full md:w-[450px] md:h-[450px]"
               alt="this is img"
             />
