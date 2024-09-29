@@ -10,7 +10,8 @@ const cardItem = [
     name: "Flavoro: Savor Every Bite",
     about: "Flavoro is an online food ordering application in which we have used different types of technologies.",
     view: <a href="https://flavoro-web.vercel.app/" target="_blank">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium px-2 py-1 rounded">
+          <button className="border border-green-600 text-green-600 font-sans px-2 rounded hover:bg-green-400
+           hover:text-white duration-300 hover:scale-105">
            {" "}
            Preview
          </button>
@@ -22,7 +23,8 @@ const cardItem = [
     name: "To-do List",
     about: "Vite.js is a fast build tool and development server for modern web projects.",
     view: <a href="https://todo-local-storage-mauve.vercel.app/" target="_blank">
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium px-2 py-1 rounded">
+    <button className="border border-green-600 text-green-600 font-sans px-2 rounded hover:bg-green-400
+           hover:text-white duration-300 hover:scale-105">
      {" "}
      Preview
    </button>
@@ -34,7 +36,8 @@ const cardItem = [
     name: "Disney+Hotstar clone",
     about: "Tailwind CSS is a utility-first CSS framework for building custom designs.",
     view: <a href="https://disney-hotstar-clone-liart.vercel.app/" target="_blank">
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-medium px-2 py-1 rounded">
+    <button className="border border-green-600 text-green-600 font-sans px-2 rounded hover:bg-green-400
+           hover:text-white duration-300 hover:scale-105">
      {" "}
      Preview
    </button>

@@ -58,20 +58,18 @@ const Tools = () => {
     className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
       <div>
         <h1 className="text-3xl mb-5 font-bold">Tools</h1>
-        <p className='underline'>
-        I made some projects with amazing Tools
+        <p className='underline'> 
+I also like these Amazing Tools Our Technologies
              </p>
-        <div className='grid grid-cols-3 md:grid-cols-8 gap-5 my-3'>
+        <div className='grid grid-cols-3 md:grid-cols-10 my-4'>
 
             {cardItem?.map(({id, logo})=> ( 
 
                 <div
-                className='flex flex-col items-center border-[2px] rounded-full w-[80px] h-[80px]  md:w-[90px] md:h-[90px] shadow-md p-1 curser-pointer hover:scale-110 duration-300'
+                className='flex flex-col items-center border-[2px] rounded-full w-[70px] h-[70px] md:w-[70px] md:h-[70px] shadow-md 
+                p-1 curser-pointer hover:scale-110 duration-300 my-2 md:my-0'
                  key={id}>
-                    <img src={logo} className='w-[80px] h-[80px] rounded-full cursor-pointer' alt="imgs" />
-                    {/* <div>
-                        <div className=''>{name}</div>
-                    </div> */}
+                    <img src={logo} className='w-[80px] h-[80px] rounded-full cursor-pointer' alt="image"/>
                      </div>     
             ))}
         </div>
