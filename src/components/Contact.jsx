@@ -32,11 +32,7 @@ const Contact = () => {
         className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
       >
         <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-        <span>Please fill out the form below to contact me </span>
-        {/* <br />
-        <span>Contact +91 8305601905</span>
-        <br />
-        <span>Email - sanjeevgour729@gmail.com</span> */}
+        <span>Please fill out the form below to contact me </span>     
 
         <div className="flex flex-col items-center justify-center mt-5">
           <form
@@ -46,7 +42,6 @@ const Contact = () => {
             className="bg-slate-200 w-96 px-8 py-6 rounded-xl"
           >
             <h1 className="text-xl font-semibod">Send your Message</h1>
-
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700">Full Name</label>
               <input
@@ -58,7 +53,6 @@ const Contact = () => {
               />
             </div>
             {errors.name && <span>This field is required</span>}
-
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700">Email Address</label>
               <input
@@ -82,7 +76,6 @@ const Contact = () => {
               />
             </div>
             {errors.message && <span>This field is required</span>}
-
             <button
               type="submit"
               className="bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300"
