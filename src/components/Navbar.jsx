@@ -1,33 +1,33 @@
 import React, { useState } from "react";
-import sanjeevpic from "../../public/sanjeev-cpy.jpg"
+import sanjeevpic from "../../public/sanjeev-cpy.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  const navItems = [ 
+  const navItems = [
     {
-      id:1, 
-      text: "Home"
-    }, 
+      id: 1,
+      text: "Home",
+    },
     {
-      id:2, 
-      text: "About"
-    }, 
+      id: 2,
+      text: "About",
+    },
     {
-      id:3, 
-      text: "Projects"
-    }, 
+      id: 3,
+      text: "Projects",
+    },
     {
-      id:4, 
-      text: "Tools"
-    }, 
+      id: 4,
+      text: "Tools",
+    },
     {
-      id:5, 
-      text: "Contacts"
-    }, 
-  ]
+      id: 5,
+      text: "Contacts",
+    },
+  ];
 
   return (
     <>
@@ -43,24 +43,22 @@ const Navbar = () => {
           {/* {desktop navbar} */}
           <div>
             <ul className="hidden md:flex space-x-8">
-              { 
-                navItems?.map(({id, text})=> ( 
-                  <li className="hover:scale-105 hover:text-green-500 duration-200 cursor-pointer" key={id}> 
-                  <Link 
-                  to={text}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active"
-
-                  >{text}
+              {navItems?.map(({ id, text }) => (
+                <li
+                  className="hover:scale-105 hover:text-green-500 duration-200 cursor-pointer"
+                  key={id}
+                >
+                  <Link
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                  >
+                    {text}
                   </Link>
-                  
-                  </li>
-                  
-                ))
-              }
-             
+                </li>
+              ))}
             </ul>
             <div className="md:hidden" onClick={() => setMenu(!menu)}>
               {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
@@ -68,34 +66,31 @@ const Navbar = () => {
           </div>
         </div>
 
-      {/* {mobile navbar} */}
-      {menu &&
-       <div className="bg-white">
-       <ul className="md:hidden flex flex-col items-center h-screen justify-center font space-y-3 text-xl">
-
-        {navItems?.map(({id, text})=> ( 
-          <li className="hover:scale-105 duration-200 cursor-pointer font-semibold" key={id}>
-            <Link 
-                  onClick={() => setMenu(!menu)}
-                  to={text}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active"
-
-                  >{text}
-                  </Link> 
-          </li>
-        )
-      )}
-         
-       </ul>
-     </div>
-      }
-     
-
+        {/* {mobile navbar} */}
+        {menu && (
+          <div className="bg-white">
+            <ul className="md:hidden flex flex-col items-center h-screen justify-center font space-y-3 text-xl">
+              {navItems?.map(({ id, text }) => (
+                <li
+                  className="hover:scale-105 duration-200 cursor-pointer font-semibold"
+                  key={id}
+                >
+                  <Link
+                    onClick={() => setMenu(!menu)}
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-
     </>
   );
 };
