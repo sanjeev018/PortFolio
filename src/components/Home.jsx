@@ -42,7 +42,7 @@ const Home = () => {
             <div className="flex flex-col justify-between md:flex-row space-y-6 md:space-y-0 items-center">
               <div className="space-y-2">
                 <h1 className="font-bold">Currently working on</h1>
-                <div className="flex space-x-5 text-center ml-3 md:ml-0">
+                <div className="flex space-x-5 text-center justify-center md:ml-0">
                   <SiMongodb className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] text-green-500 bg-black" />
                   <SiExpress className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
                   <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] bg-black text-sky-400" />
@@ -57,9 +57,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-          </div>
-
-          {/* {right container} */}
+          </div>          {/* {right container} */}
           <div className="md:w-1/2 md:ml-[48px] md:mt-[20px] order-1">
             <img
               src={giphy}

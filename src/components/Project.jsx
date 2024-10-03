@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import flavoro from "../../public/flavoro.png";
 import todolist from "../../public/todolist.png";
 import disney from "../../public/disney.png";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const cardItem = [
   {
@@ -61,6 +63,10 @@ const cardItem = [
 ];
 
 const Projects = () => {
+  useEffect(()=> { 
+    AOS.init({duration: "500", delay: "100"})
+
+  },[])
   return (
     <div
       name="Projects"
@@ -72,6 +78,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
           {cardItem?.map(({ id, logo, name, about, view }) => (
             <div
+            data-aos="fade-right"
               className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 curser-pointer 
               transition-shadow duration-300 hover:shadow-2xl hover:animate-none animate-pulse"
               key={id}
