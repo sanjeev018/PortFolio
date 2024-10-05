@@ -59,8 +59,8 @@ const Tools = () => {
 
     useEffect(()=> { 
       AOS.init({
-        duration: "1000",
-         delay: "100"
+        duration: "2000",
+         delay: "500"
         })
     },[])
   return (
