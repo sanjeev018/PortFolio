@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
 import javascript from "../../public/javascript.png";
@@ -8,6 +8,9 @@ import redux from "../../public/redux.png";
 import typescript from "../../public/typescript.png";
 import github from "../../public/github.png";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css"
+
 
 const cardItem = [
   {
@@ -53,8 +56,16 @@ const cardItem = [
 ];
 
 const Tools = () => {
+
+    useEffect(()=> { 
+      AOS.init({
+        duration: "1000",
+         delay: "100"
+        })
+    },[])
   return (
     <div
+      data-aos="fade-up-left"
       name="Tools"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
     >
@@ -66,8 +77,9 @@ const Tools = () => {
         <div className="grid grid-cols-3 md:grid-cols-10 my-4">
           {cardItem?.map(({ id, logo }) => (
             <motion.div
-            animate={{rotate: [0, 200 , 200 , 0]}} //360
-            transition={{repeat: Infinity, duration:1, delay:.5}}
+            animate={{rotate: [0, 720, 720 , 0]}} //360
+            transition={{repeat: Infinity, duration:3
+              , delay:.5}}
               className="flex flex-col items-center border-[2px] rounded-full w-[70px] h-[70px] md:w-[70px] md:h-[70px] shadow-md 
                 p-1 curser-pointer hover:scale-110 duration-300 my-2 md:my-0"
               key={id}

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -6,17 +6,28 @@ import { FaNodeJs } from "react-icons/fa6";
 import { ReactTyped } from "react-typed";
 import giphy from "../../public/giphy.webp";
 import resume from "../../public/Resume.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const Home = () => {
+  useEffect(()=> { 
+    AOS.init({
+      duration: "1500",
+      //  delay: "100"
+      })
+  },[])
   return (
     <>
       <div
         name="Home"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-20 mb-10"
       >
         <div className="flex flex-col md:flex-row">
           {/* left container   */}
-          <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
+          <div
+        className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1"
+        data-aos="fade-right"
+           >
             <span className="text-xl">Welcome In My Feed</span>
             <div className="flex space-x-1 text-2xl md:text-4xl">
               <h1>Hello, I'm a </h1>
@@ -58,7 +69,10 @@ const Home = () => {
               </div>
             </div>
           </div>          {/* {right container} */}
-          <div className="md:w-1/2 md:ml-[48px] md:mt-[20px] order-1">
+          <div
+           className="md:w-1/2 md:ml-[48px] md:mt-[20px] order-1"
+           data-aos="fade-left"
+           >
             <img
               src={giphy}
               className="rounded-full md:w-[450px] md:h-[450px]"

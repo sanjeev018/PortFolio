@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const Contact = () => {
+
+  useEffect(()=> { 
+    AOS.init({
+      duration: "1000",
+       delay: "100"
+      })
+  },[])
+
   const {
     register,
     handleSubmit,
@@ -28,6 +38,7 @@ const Contact = () => {
   return (
     <>
       <div
+      data-aos="fade-up-right"
         name="Contacts"
         className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
       >

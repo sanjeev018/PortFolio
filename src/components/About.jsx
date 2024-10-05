@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const About = () => {
+  useEffect(()=> { 
+    AOS.init({
+      duration: "1500",
+       delay: "100"
+      })
+  },[])
+
   return (
     <div
+    data-aos="fade-left"
     name="About"
-    className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
+    className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-7 mb-16">
         <div className="font-sans">
       <h1 className="text-3xl mb-5 font-bold">About</h1>
       <p >

@@ -64,11 +64,14 @@ const cardItem = [
 
 const Projects = () => {
   useEffect(()=> { 
-    AOS.init({duration: "500", delay: "100"})
-
+    AOS.init({
+      duration: "1000",
+       delay: "100"
+      })
   },[])
   return (
     <div
+    data-aos="fade-up-right"
       name="Projects"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
     >
@@ -78,7 +81,6 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
           {cardItem?.map(({ id, logo, name, about, view }) => (
             <div
-            data-aos="fade-right"
               className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 curser-pointer 
               transition-shadow duration-300 hover:shadow-2xl hover:animate-none animate-pulse"
               key={id}
