@@ -12,10 +12,11 @@ const About = () => {
 
   return (
     <div
-    data-aos="fade-left"
     name="About"
     className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-7 mb-16">
-        <div className="font-sans">
+        <div
+        data-aos="fade-right"
+        className="font-sans">
       <h1 className="text-3xl mb-5 font-bold">About</h1>
       <p >
         Hello, I'm Sanjeev, passionate Web developer with a keen eye for FrontEnd React.

@@ -65,7 +65,7 @@ const Tools = () => {
     },[])
   return (
     <div
-      data-aos="fade-up-left"
+      data-aos="fade-down-right"
       name="Tools"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
     >
